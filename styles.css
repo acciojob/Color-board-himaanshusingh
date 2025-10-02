@@ -1,1 +1,24 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  place-content: center;
+  gap: 2px;
+  padding: 2px;
+}
+.square {
+  height: 35px;
+  width: 35px;
+  border: 1px solid black;
+  transition: all 1s ease 0s;
+}
+.square:hover {
+  background-color: blue;
+}
