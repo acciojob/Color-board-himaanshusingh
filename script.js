@@ -12,6 +12,6 @@ Array.from(allSquares).forEach((square) => {
     this.style.cursor = "pointer";
   });
   square.addEventListener("mouseout", function () {
-    this.style.backgroundColor = "white";
+    this.style.backgroundColor = "rgb(29, 29, 29)";
   });
 });
