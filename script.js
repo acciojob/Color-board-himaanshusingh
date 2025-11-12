@@ -6,12 +6,12 @@ const randomColor = () => {
   return `rgb(${red}, ${green}, ${blue})`;
 };
 const allSquares = document.querySelectorAll(".square");
-Array.from(allSquares).forEach((square) => {
-  square.addEventListener("mouseover", function () {
-    this.style.backgroundColor = randomColor();
-    this.style.cursor = "pointer";
+allSquares.forEach((square) => {
+  square.addEventListener("mouseover", () => {
+    square.style.backgroundColor = randomColor();
+    square.style.cursor = "pointer";
   });
-  square.addEventListener("mouseout", function () {
-    this.style.backgroundColor = "rgb(29, 29, 29)";
+  square.addEventListener("mouseout", () => {
+    square.style.backgroundColor = "rgb(29, 29, 29)";
   });
 });
