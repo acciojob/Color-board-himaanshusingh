@@ -1,18 +1,18 @@
 const container = document.querySelector(".container");
-const boxes = document.getElementsByClassName("box");
+const squares = document.getElementsByClassName("square");
 
 for (let i = 0; i < 800; i++) {
-  const box = document.createElement("div");
-  box.className = "box";
-  container.append(box);
+  const square = document.createElement("div");
+  square.className = "square";
+  container.append(square);
 }
 
-Array.from(boxes).forEach((box) => {
-  box.addEventListener("mouseover", () => {
-    box.style.backgroundColor = genColor();
+Array.from(squares).forEach((square) => {
+  square.addEventListener("mouseover", () => {
+    square.style.backgroundColor = genColor();
   });
-  box.addEventListener("mouseout", () => {
-    box.removeAttribute("style");
+  square.addEventListener("mouseout", () => {
+    square.removeAttribute("style");
   });
 });
 

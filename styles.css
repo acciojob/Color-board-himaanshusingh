@@ -13,9 +13,9 @@
   gap: 5px;
   padding: 5px;
 }
-.box {
-  width: 15px;
-  height: 15px;
+.square {
+  width: 17px;
+  height: 17px;
   background-color: #1d1d1d;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
